@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  dev:
+    working_dir: /work
+    image: node:20.10-bullseye
+    tty: true
+    volumes:
+      - type: bind
+        source: .
+        target: /work
